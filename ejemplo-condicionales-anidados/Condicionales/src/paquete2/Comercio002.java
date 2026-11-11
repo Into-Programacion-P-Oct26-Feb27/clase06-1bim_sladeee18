@@ -34,10 +34,11 @@ public class Comercio002 {
 
         double sueldoFinal;
 
-      
-        
-        System.out.println("Ingrese el nombre por favor");
+        System.out.println( "ingrese  nombre del comercio");
         nombreComercio = entrada.nextLine();
+
+        System.out.println("Ingrese el nombre por favor");
+        nombre = entrada.nextLine();
 
         System.out.println(
                 "Ingrese el apellido por favor");

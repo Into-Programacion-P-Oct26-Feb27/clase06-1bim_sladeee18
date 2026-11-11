@@ -61,8 +61,9 @@ public class Comercio02 {
                 if (productividad>=80 && productividad < 200) {
                     bono = 100;
                 }else{
-                    if(productividad >= 200){
+                    if(productividad >= 200 && productividad <= 500 ){
                         bono = 200;
+                    }else{    
                     }
                 }
             }
