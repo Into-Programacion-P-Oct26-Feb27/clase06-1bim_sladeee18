@@ -19,6 +19,7 @@ public class Comercio002 {
         entrada.useLocale(Locale.US); // 10,2 / 10.2
 
         String nombre;
+        String nombreComercio;
         String apellido;
         int edad;
         double sueldoBasico;
@@ -33,19 +34,25 @@ public class Comercio002 {
 
         double sueldoFinal;
 
+      
+        
         System.out.println("Ingrese el nombre por favor");
-        nombre = entrada.nextLine();
+        nombreComercio = entrada.nextLine();
 
-        System.out.println("Ingrese el apellido por favor");
+        System.out.println(
+                "Ingrese el apellido por favor");
         apellido = entrada.nextLine();
 
-        System.out.println("Ingrese la edad por favor");
+        System.out.println(
+                "Ingrese la edad por favor");
         edad = entrada.nextInt();
 
-        System.out.println("Ingrese el sueldo básico por favor");
+        System.out.println(
+                "Ingrese el sueldo básico por favor");
         sueldoBasico = entrada.nextDouble();
 
-        System.out.println("Ingrese el número de productos vendidos "
+        System.out.println(
+                "Ingrese el número de productos vendidos "
                 + "por favor");
         numeroProductos = entrada.nextInt();
 
@@ -57,7 +64,8 @@ public class Comercio002 {
         if (productividad <= 30) {
             bono = 25; // $25
             sueldoFinal = adicionalSeguro + bono + sueldoBasico;
-            System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
+            System.out.printf("nombre del Comercio\n\n"
+                    + "Nombre del comercio:%s\n"
                     + "Nombres: %s\n"
                     + "Apellidos: %s\n"
                     + "Edad: %d\n"
@@ -67,6 +75,7 @@ public class Comercio002 {
                     + "\tBono: $%.2f\n"
                     + "Adicional del seguro: $%.2f\n\n"
                     + "Sueldo final: $%.2f\n",
+                    nombreComercio,
                     nombre,
                     apellido,
                     edad,
@@ -126,7 +135,7 @@ public class Comercio002 {
                             sueldoFinal);
 
                 } else {
-                    if (productividad >= 200 && productividad <=500  ) {
+                    if (productividad >= 200 && productividad <= 500) {
                         bono = 200;
                         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
                         System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
